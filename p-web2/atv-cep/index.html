@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulário</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="p-4">
+
+<div class="container">
+  <h2 class="mb-4">Formulário</h2>
+  <form id="formulario" class="border p-4 rounded shadow-sm">
+
+    <div class="mb-3">
+      <label for="matricula" class="form-label">Matrícula</label>
+      <input type="text" class="form-control" id="matricula" name="matricula">
+    </div>
+
+    <div class="mb-3">
+      <label for="nome" class="form-label">Nome</label>
+      <input type="text" class="form-control" id="nome" name="nome">
+    </div>
+
+    <div class="mb-3">
+      <label for="cep" class="form-label">CEP</label>
+      <div class="input-group">
+        <input type="text" class="form-control" id="cep" name="cep">
+        <button type="button" class="btn btn-outline-secondary" onclick="buscarEndereco()">🔍</button>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Endereço</label>
+      <p id="endereco" class="form-control-plaintext bg-light p-2 rounded" style="min-height: 40px;">(O endereço aparecerá aqui)</p>
+    </div>
+
+    <button type="button" class="btn btn-primary w-100" onclick="validarFormulario()">OK</button>
+
+  </form>
+</div>
+
+<!-- Bootstrap Bundle JS (com Popper.js) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Seu script separado -->
+<script src="script.js"></script>
+
+</body>
+</html>
